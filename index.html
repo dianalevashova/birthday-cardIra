@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Happy Birthday, Mira</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Work+Sans:wght@400;500&family=Vazirmatn:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Work+Sans:wght@400;500&family=Tajawal:wght@400;500;700&display=swap');
 
   :root {
     --espresso: #2e1c14;
@@ -108,7 +108,7 @@
     word-break: break-word;
   }
   .name:focus { border-bottom-color: var(--caramel); }
-  [dir="rtl"] .name { font-family: 'Vazirmatn', sans-serif; font-style: normal; }
+  [dir="rtl"] .name { font-family: 'Tajawal', sans-serif; font-style: normal; }
 
   .cake-wrap {
     position: relative;
@@ -173,7 +173,7 @@
     margin: 0 0 14px;
     text-align: left;
   }
-  [dir="rtl"] .message p { text-align: right; font-family: 'Vazirmatn', sans-serif; line-height: 2; }
+  [dir="rtl"] .message p { text-align: right; font-family: 'Tajawal', sans-serif; line-height: 2; }
 
   .signoff {
     font-family: 'Fraunces', serif;
@@ -183,7 +183,7 @@
     margin-top: 8px;
     text-align: center;
   }
-  [dir="rtl"] .signoff { font-family: 'Vazirmatn', sans-serif; font-style: normal; font-weight: 600; }
+  [dir="rtl"] .signoff { font-family: 'Tajawal', sans-serif; font-style: normal; font-weight: 700; }
 
   .confetti {
     position: fixed;
@@ -218,10 +218,10 @@
 
   [data-lang-block] { display: none; }
   .lang-en [data-lang-block="en"] { display: block; }
-  .lang-fa [data-lang-block="fa"] { display: block; }
+  .lang-ar [data-lang-block="ar"] { display: block; }
   span[data-lang-block] { display: none; }
   .lang-en span[data-lang-block="en"] { display: inline-block; }
-  .lang-fa span[data-lang-block="fa"] { display: inline-block; }
+  .lang-ar span[data-lang-block="ar"] { display: inline-block; }
 
   @media (prefers-reduced-motion: reduce) {
     .flame { animation: none; }
@@ -233,22 +233,20 @@
 
 <div class="card" id="card" dir="ltr">
 
-  <div class="lang-toggle" id="langToggle" title="فارسی">
+  <div class="lang-toggle" id="langToggle" title="العربية">
     <svg viewBox="0 0 90 60" xmlns="http://www.w3.org/2000/svg">
-      <rect width="90" height="20" y="0" fill="#239f40"/>
-      <rect width="90" height="20" y="20" fill="#fff"/>
-      <rect width="90" height="20" y="40" fill="#da0000"/>
-      <circle cx="45" cy="30" r="7" fill="#da0000"/>
+      <polygon points="0,0 25,0 15,7.5 25,15 15,22.5 25,30 15,37.5 25,45 15,52.5 25,60 0,60" fill="#fff"/>
+      <polygon points="25,0 90,0 90,60 25,60 15,52.5 25,45 15,37.5 25,30 15,22.5 25,15 15,7.5" fill="#ce1126"/>
     </svg>
   </div>
-  <div class="lang-toggle-label" data-lang-block="en">فارسی</div>
-  <div class="lang-toggle-label" data-lang-block="fa" style="font-family:'Vazirmatn',sans-serif;">English</div>
+  <div class="lang-toggle-label" data-lang-block="en">عربي</div>
+  <div class="lang-toggle-label" data-lang-block="ar">eng</div>
 
   <div class="to-line" data-lang-block="en">For</div>
-  <div class="to-line" data-lang-block="fa" style="font-family:'Vazirmatn',sans-serif;">برای</div>
+  <div class="to-line" data-lang-block="ar">إلى</div>
 
-  <div class="name" contenteditable="true" spellcheck="false" data-lang-block="en">Amira</div>
-  <div class="name" contenteditable="true" spellcheck="false" data-lang-block="fa">امیرا</div>
+  <div class="name" contenteditable="true" spellcheck="false" data-lang-block="en">Mira</div>
+  <div class="name" contenteditable="true" spellcheck="false" data-lang-block="ar">ميرا</div>
 
   <div class="cake-wrap">
     <svg class="cake-svg" viewBox="0 0 220 170" preserveAspectRatio="xMidYMax meet">
@@ -308,18 +306,18 @@
   </div>
 
   <div class="instruction" id="instructionEn" data-lang-block="en">Blow out the candles (tap each one)</div>
-  <div class="instruction" id="instructionFa" data-lang-block="fa" style="font-family:'Vazirmatn',sans-serif;">شمع‌ها را فوت کن (روی هرکدام ضربه بزن)</div>
+  <div class="instruction" id="instructionAr" data-lang-block="ar">أطفئي الشموع (اضغطي على كل واحدة)</div>
 
   <div class="message" id="message">
     <div data-lang-block="en">
-      <p>Wishing you a birthday as warm and rich as your favorite cup of coffee - full of comfort, energizing moments, and people who make you smile.</p>
+      <p>Wishing you a birthday as warm and rich as your favorite cup of coffee, full of comfort, energizing moments, and people who make you smile.</p>
       <p>May this new year of life bring you strength for everything you're brewing up, and plenty of quiet mornings to enjoy the little things.</p>
       <div class="signoff">With warmth and best wishes ☕</div>
     </div>
-    <div data-lang-block="fa" style="font-family:'Vazirmatn',sans-serif;">
-      <p>تولدت مبارک، به گرمی و غنای فنجان قهوه‌ی موردعلاقه‌ات - پر از آرامش، لحظات پرانرژی و آدم‌هایی که لبخند به لبانت می‌آورند.</p>
-      <p>باشد که این سال جدید زندگی، برای هر چیزی که در سر داری قدرت بیاورد و صبح‌های آرام فراوانی برای لذت بردن از چیزهای کوچک به همراه داشته باشد.</p>
-      <div class="signoff">با محبت و بهترین آرزوها ☕</div>
+    <div data-lang-block="ar">
+      <p>أتمنى لك عيد ميلاد دافئ وغني مثل فنجان قهوتك المفضل، مليء بالراحة واللحظات المفعمة بالحيوية والأشخاص الذين يرسمون الابتسامة على وجهك.</p>
+      <p>أتمنى أن تجلب لك هذه السنة الجديدة من العمر القوة لكل ما تخططين له، والكثير من الصباحات الهادئة للاستمتاع بالتفاصيل الصغيرة.</p>
+      <div class="signoff">بكل الدفء وأطيب التمنيات ☕</div>
     </div>
   </div>
 </div>
@@ -330,17 +328,17 @@
   const langToggle = document.getElementById('langToggle');
   const tapZones = document.querySelectorAll('.tap-zone');
   const instruction_en = document.getElementById('instructionEn');
-  const instruction_fa = document.getElementById('instructionFa');
+  const instruction_ar = document.getElementById('instructionAr');
   const total = tapZones.length;
   let blownCount = 0;
 
   langToggle.addEventListener('click', () => {
     if (body.classList.contains('lang-en')) {
       body.classList.remove('lang-en');
-      body.classList.add('lang-fa');
+      body.classList.add('lang-ar');
       card.setAttribute('dir', 'rtl');
     } else {
-      body.classList.remove('lang-fa');
+      body.classList.remove('lang-ar');
       body.classList.add('lang-en');
       card.setAttribute('dir', 'ltr');
     }
@@ -358,11 +356,11 @@
       blownCount++;
       if (blownCount < total) {
         const remaining = total - blownCount;
-        instruction_en.textContent = remaining + ' more 🕯️...';
-        instruction_fa.textContent = remaining + ' شمع دیگر 🕯️...';
+        instruction_en.textContent = remaining + ' more 🕯️';
+        instruction_ar.textContent = 'باقي ' + remaining + ' 🕯️';
       } else {
         instruction_en.textContent = 'Make a wish ✨';
-        instruction_fa.textContent = 'آرزو کن ✨';
+        instruction_ar.textContent = 'تمنّي أمنية ✨';
         setTimeout(() => {
           document.getElementById('message').classList.add('reveal');
           launchBeans();
